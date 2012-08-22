@@ -43,7 +43,7 @@ class StylishhaskellCommand(sublime_plugin.TextCommand):
     def callStylish(self, string):
         try:
             env = os.environ
-            env["PATH"] = (path + ":" if path else "") + os.environ['PATH']
+            env["PATH"] = (path + os.pathsep if path else "") + os.environ['PATH']
             tfile = tempfile.NamedTemporaryFile(delete=False)
             tfile.write(string)
             tfile.close()
