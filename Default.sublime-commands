@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "StylishHaskell: Reformat haskell",
+        "command": "stylishhaskell"
+    }
+]
